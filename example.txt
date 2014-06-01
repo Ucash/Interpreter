@@ -1,0 +1,21 @@
+int gcd(int m, int n) {
+
+int res = 0;
+
+print m;
+print n;
+print "-------";
+
+if (m!=n) { 
+    if (m > n) 
+        res = gcd(m-n, n);
+    else
+        res = gcd(n-m, m);
+}
+else
+    res = m;
+
+return res;
+}
+
+print gcd(124,14);
