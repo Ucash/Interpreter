@@ -169,12 +169,6 @@ class ClassDefs(Node):
 		self.list=[]
 
 class ClassDef(Node):
-    def __init__(self,accessmodificator,id,classcontent):
-        self.accessmodificator=accessmodificator
-        self.id=id
-        self.classcontent=classcontent
-
-class ExtendsClassDef(Node):
     def __init__(self,accessmodificator,id,parentId,classcontent):
         self.accessmodificator=accessmodificator
         self.id=id

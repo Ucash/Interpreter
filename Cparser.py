@@ -321,9 +321,9 @@ class Cparser(object):
         """classdef : accessmodificator CLASS id classcontent
                   | accessmodificator CLASS id EXTENDS id classcontent"""
         if len(p) < 7:
-            p[0] = AST.ClassDef(p[1], p[3], p[4])
+            p[0] = AST.ClassDef(p[1], p[3], None, p[4])
         else:
-            p[0] = AST.ExtendsClassDef(p[1], p[3], p[5], p[6])
+            p[0] = AST.ClassDef(p[1], p[3], p[5], p[6])
 
     def p_classcontent(self, p):
         """classcontent : '{' fielddefs methoddefs '}' """
