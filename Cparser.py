@@ -33,6 +33,7 @@ class Cparser(object):
             print("Syntax error at line {0}, column {1}: LexToken({2}, '{3}')".format(p.lineno,
                                                                                       self.scanner.find_tok_column(p),
                                                                                       p.type, p.value))
+
         else:
             print('At end of input')
         self.errorsOccured = True
@@ -326,28 +327,33 @@ class Cparser(object):
             p[0] = AST.ClassDef(p[1], p[3], p[5], p[6])
 
     def p_classcontent(self, p):
-        """classcontent : '{' fielddefs methoddefs '}' """
-        p[0] = AST.Classcontent(p[2], p[3])
+        """classcontent : '{' fielddefs ';' methoddefs '}' """
+        p[0] = AST.Classcontent(p[2], p[4])
 
     def p_fielddefs(self, p):
-        """fielddefs : fielddefs fielddef
+        """fielddefs : fielddef fielddefs
                      | """
-        if len(p) > 1:
-            p[1].list.append(p[2])
-            p[0] = p[1]
+        if len(p) == 3:
+            p[2].list.reverse()
+            p[2].list.append(p[1])
+            p[2].list.reverse()
+            p[0] = p[2]
         else:
             p[0] = AST.Fielddefs()
 
     def p_fielddef(self, p):
-        """fielddef : accessmodificator declaration"""
+        """fielddef : accessmodificator declaration """
         p[0] = AST.Fielddef(p[1], p[2])
 
     def p_methoddefs(self, p):
-        """methoddefs : methoddefs methoddef
+        """methoddefs : methoddef methoddefs
                      | """
-        if len(p) > 1:
-            p[1].list.append(p[2])
-            p[0] = p[1]
+
+        if len(p) == 3:
+            p[2].list.reverse()
+            p[2].list.append(p[1])
+            p[2].list.reverse()
+            p[0] = p[2]
         else:
             p[0] = AST.Methoddefs()
 

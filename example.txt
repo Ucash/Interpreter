@@ -1,7 +1,20 @@
+public class MyKlass {
+    public int m = 6;
+    private MyKlass klass;
+    ;
+    public int gcd(int m, int n) {
+        return n;
+    }
+}
+
+MyKlass klasa;
+int j = 7;
+
 int gcd(int m, int n) {
 
 int res = 0;
 
+klasa.m = 67;
 print m;
 print n;
 print "-------";
@@ -15,7 +28,8 @@ if (m!=n) {
 else
     res = m;
 
-return res;
+    return res;
 }
 
 print gcd(124,14);
+print klasa.m;
