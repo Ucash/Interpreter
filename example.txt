@@ -1,13 +1,18 @@
-public class MyKlass {
+public class MyClass {
     public int m = 6;
     private MyKlass klass;
     ;
-    public int gcd(int m, int n) {
-        return n;
+    public int fun(int k) {
+        return k;
     }
 }
 
-MyKlass klasa;
+public class SuperMyClass extends MyClass {
+    public int n = 7;
+    ;
+}
+
+MyClass klasa;
 int j = 7;
 
 int gcd(int m, int n) {
@@ -33,3 +38,4 @@ else
 
 print gcd(124,14);
 print klasa.m;
+print klasa.fun(klasa.m);

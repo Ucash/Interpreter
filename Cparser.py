@@ -348,7 +348,6 @@ class Cparser(object):
     def p_methoddefs(self, p):
         """methoddefs : methoddef methoddefs
                      | """
-
         if len(p) == 3:
             p[2].list.reverse()
             p[2].list.append(p[1])
