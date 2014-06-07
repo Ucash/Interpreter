@@ -1,6 +1,5 @@
 public class MyClass {
     public int m = 6;
-    private MyKlass klass;
     ;
     public int fun(int k) {
         return k;

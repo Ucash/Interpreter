@@ -19,10 +19,9 @@ if __name__ == '__main__':
     #parser.parse(text, lexer=Cparser.scanner)
     
     ast = parser.parse(text, lexer=Cparser.scanner)
-    #checker=TypeChecker()
+    checker=TypeChecker()
     if not Cparser.errorsOccured:
-        print "udalo sie"
-        #ast.accept(checker)
+        ast.accept(checker)
     #if (not Cparser.errorsOccured) and (not checker.errorsOcurred):
     #    interpreter = Interpreter()
     #    ast.acceptInt(interpreter)
