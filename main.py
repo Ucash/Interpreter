@@ -22,6 +22,6 @@ if __name__ == '__main__':
     checker=TypeChecker()
     if not Cparser.errorsOccured:
         ast.accept(checker)
-    #if (not Cparser.errorsOccured) and (not checker.errorsOcurred):
-    #    interpreter = Interpreter()
-    #    ast.acceptInt(interpreter)
+    if (not Cparser.errorsOccured) and (not checker.errorsOcurred):
+        interpreter = Interpreter()
+        ast.acceptInt(interpreter)

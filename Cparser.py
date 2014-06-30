@@ -106,7 +106,8 @@ class Cparser(object):
 
 
     def p_instruction(self, p):
-        """instruction : print_instr
+        """instruction : expression ';'
+                       | print_instr
                        | labeled_instr
                        | assignment
                        | choice_instr

@@ -28,15 +28,20 @@ class MemoryStack:
             self.stack.append(memory)
 
     def get(self, name):             # get from memory stack current value of variable <name>
+        #print "get   " + str(name)
         for i in range(len(self.stack)-1,-1,-1):
             if self.stack[i].has_key(name):
+                #print "      " + str(self.stack[i].get(name))
                 return self.stack[i].get(name)
+        #print "      None"
         return None
         
     def insert(self, name, value): # inserts into memory stack variable <name> with value <value>
+        #print "insert    " + str(name) + " " + str(value)
         self.stack[-1].put(name, value)
         
     def set(self, name, value): # sets variable <name> to value <value>
+        #print "set    " + str(name) + " " + str(value)
         for i in range(len(self.stack)-1,-1,-1):
             if self.stack[i].has_key(name):
                 self.stack[i].put(name,value)
