@@ -1,5 +1,4 @@
 import AST
-import SymbolTable
 from Memory import *
 from Exceptions import *
 from visit import *
@@ -47,6 +46,7 @@ class Interpreter(object):
                     self.mainMemory.insert(id, value)
                 else:
                     self.mainMemory.insert(currClass + "." + id, value)
+        #self.mainMemory.printIt()
 
     @when(AST.Inits)
     def visit(self, node):
@@ -71,7 +71,9 @@ class Interpreter(object):
     @when(AST.Classinit)
     def visit(self, node):
         #print "visiting Classinit"
-        self.mainMemory.insert(node.id.value, self.mainMemory.get("currClassDecl"))
+        currClass = self.mainMemory.get("currClassDecl")
+        self.mainMemory.insert(node.id.value, currClass)
+        self.mainMemory.addClassDef(node.id.value, currClass, self.mainMemory.get("EX"+currClass))
 
     @when(AST.Instructions)
     def visit(self, node):
@@ -95,18 +97,15 @@ class Interpreter(object):
         if len(node.access.list) == 1:
             if self.mainMemory.get("currCall") == None:
                 id = node.access.list[0].value
-                suf = id
             else:
                 id = self.mainMemory.get("currCall") + "." + node.access.list[0].value
-                suf = node.access.list[0].value
+
         else:
-            id = self.mainMemory.get(node.access.list[0].value) + "." + node.access.list[1].value
-            suf = node.access.list[1].value
+            id = node.access.list[0].value + "." + node.access.list[1].value
+
         value = node.expression.acceptInt(self)
         if not self.functionMemory.set(id, value):
-            if not self.mainMemory.set(id, value):
-                if not self.functionMemory.set(self.mainMemory.get("EX" + self.mainMemory.get("currCall")) + "." + suf, value):
-                     self.mainMemory.set(self.mainMemory.get("EX" + self.mainMemory.get("currCall")) + "." + suf, value)
+            self.mainMemory.set(id, value)
         return value
 
     @when(AST.ChoiceInstr)
@@ -217,23 +216,16 @@ class Interpreter(object):
                 val = self.mainMemory.get("currCall") + "." + node.list[0].value
                 if self.functionMemory.get(val) != None:
                     result = self.functionMemory.get(val)
-                result = self.mainMemory.get(val)
-                if result == None:
-                    if self.mainMemory.get("EX" + self.mainMemory.get("currCall")) != None:
-                        result = self.mainMemory.get(self.mainMemory.get("EX" + self.mainMemory.get("currCall")) + "." + node.list[0].value)
+                else:
+                    result = self.mainMemory.get(val)
                 if result == None:
                     result = node.list[0].acceptInt(self)
                 return result
         else:
-            result = None
-            val = self.mainMemory.get(node.list[0].value) + "." + node.list[1].value
+            val = node.list[0].value + "." + node.list[1].value
             if self.functionMemory.get(val) != None:
                 result = self.functionMemory.get(val)
-            result = self.mainMemory.get(val)
-            if result == None:
-                val = self.mainMemory.get("EX" + self.mainMemory.get(node.list[0].value)) + "." + node.list[1].value
-                if self.functionMemory.get(val) != None:
-                    result = self.functionMemory.get(val)
+            else:
                 result = self.mainMemory.get(val)
             return result
 
@@ -293,20 +285,20 @@ class Interpreter(object):
         if (len(node.access.list) == 1):
             currVal = node.access.list[0].value
         else:
-            self.mainMemory.insert("currCall", self.mainMemory.get(node.access.list[0].value))
-            currVal = self.mainMemory.get(node.access.list[0].value) + "." + node.access.list[1].value
-
+            self.mainMemory.insert("currCall", node.access.list[0].value)
+            currVal = node.access.list[0].value + "." + node.access.list[1].value
         fun = self.mainMemory.get(currVal)
-        if fun == None:
-            currVal = self.mainMemory.get("EX" + self.mainMemory.get(node.access.list[0].value)) + "." + node.access.list[1].value
-            fun = self.mainMemory.get(currVal)
 
         givenArgValues = node.expressionList.acceptInt(self)
         self.functionMemory.push(Memory(currVal))
+
         for i in range(len(fun.argList)):
             self.functionMemory.insert(fun.argList[i], givenArgValues[i])
         try:
+            if fun == None:
+                print "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
             fun.compoundInstr.acceptInt(self)
+
         except ReturnValueException as e:
             return e.value
         finally:

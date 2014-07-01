@@ -11,6 +11,7 @@ public class MyClass {
 
 public class SuperMyClass extends MyClass {
     public int n = 7;
+    public int j = 3;
     ;
 }
 
@@ -23,6 +24,8 @@ int gcd(int m, int n) {
     int res = 0;
 
     klasa.j = 67;
+
+    superKlasa.funkcja(120);
     #print m;
     #print n;
     #print "-------";
@@ -39,13 +42,12 @@ int gcd(int m, int n) {
     return res;
 }
 
+print superKlasa.j;
 print gcd(124,14);
 print klasa.j;
 klasa.funkcja(4);
 print klasa.fun();
 print superKlasa.n;
-print superKlasa.j;
 print superKlasa.fun();
 superKlasa.funkcja(18);
 print superKlasa.fun();
-#print klasa.n;
