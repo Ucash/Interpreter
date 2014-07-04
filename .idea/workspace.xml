@@ -12,7 +12,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/interpreter$main.coverage" NAME="main Coverage Results" MODIFIED="1404247886250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interpreter$main.coverage" NAME="main Coverage Results" MODIFIED="1404466593914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -26,21 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Interpreter.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Interpreter.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interpreter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="25" selection-start="5142" selection-end="5142" vertical-scroll-proportion="0.7540107" vertical-offset="2608" max-vertical-offset="6647">
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state line="170" column="25" selection-start="5142" selection-end="5142" vertical-scroll-proportion="0.0" vertical-offset="2659" max-vertical-offset="6647">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AST.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AST.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="10" selection-start="2700" selection-end="2704" vertical-scroll-proportion="-3.8" vertical-offset="2132" max-vertical-offset="4182">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4148">
               <folding />
             </state>
           </provider>
@@ -49,7 +47,7 @@
       <file leaf-file-name="Memory.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Memory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="67" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1802">
+            <state line="23" column="22" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
@@ -58,7 +56,7 @@
       <file leaf-file-name="TypeChecker.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TypeChecker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="38" selection-start="4213" selection-end="4213" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="6766">
+            <state line="114" column="38" selection-start="4213" selection-end="4213" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="6834">
               <folding />
             </state>
           </provider>
@@ -67,7 +65,16 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="476">
+            <state line="23" column="5" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cparser.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cparser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="6358">
               <folding />
             </state>
           </provider>
@@ -76,7 +83,7 @@
       <file leaf-file-name="example.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="18" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+            <state line="14" column="4" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -94,7 +101,7 @@
       <file leaf-file-name="scanner.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scanner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="6" selection-start="1712" selection-end="1714" vertical-scroll-proportion="-4.76" vertical-offset="1428" max-vertical-offset="1921">
+            <state line="79" column="0" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1921">
               <folding />
             </state>
           </provider>
@@ -113,13 +120,13 @@
         <option value="$PROJECT_DIR$/TypeChecker.py" />
         <option value="$PROJECT_DIR$/SymbolTable.py" />
         <option value="$PROJECT_DIR$/visit.py" />
-        <option value="$PROJECT_DIR$/AST.py" />
         <option value="$PROJECT_DIR$/scanner.py" />
         <option value="$PROJECT_DIR$/Cparser.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Memory.py" />
         <option value="$PROJECT_DIR$/Interpreter.py" />
         <option value="$PROJECT_DIR$/example.txt" />
+        <option value="$PROJECT_DIR$/AST.py" />
       </list>
     </option>
   </component>
@@ -385,19 +392,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20619336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21223564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30668843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30668843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -447,6 +454,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/parser.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="258" column="10" selection-start="9554" selection-end="9554" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="115515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Interpreter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="12" selection-start="4086" selection-end="4086" vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="4590" />
@@ -604,11 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TreePrinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="4678" selection-end="4678" vertical-scroll-proportion="0.0" vertical-offset="2008" max-vertical-offset="2584" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser.out">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="6" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="86785" />
@@ -644,11 +660,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TreePrinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="4678" selection-end="4678" vertical-scroll-proportion="1.2562814" vertical-offset="1732" max-vertical-offset="2584" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parsetab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312" />
@@ -661,21 +672,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="27" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SymbolTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="62" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+        <state line="27" column="62" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypeChecker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="38" selection-start="4213" selection-end="4213" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="6766">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cparser.py">
+    <entry file="file://$PROJECT_DIR$/Interpreter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="39" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.21794872" vertical-offset="1734" max-vertical-offset="6341" />
+        <state line="170" column="25" selection-start="5142" selection-end="5142" vertical-scroll-proportion="0.0" vertical-offset="2659" max-vertical-offset="6647">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser.out">
@@ -687,55 +703,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="6" selection-start="1712" selection-end="1714" vertical-scroll-proportion="-4.76" vertical-offset="1428" max-vertical-offset="1921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="10" selection-start="2700" selection-end="2704" vertical-scroll-proportion="-3.8" vertical-offset="2132" max-vertical-offset="4182">
+        <state line="79" column="0" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1921">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Memory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="67" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1802">
+        <state line="23" column="22" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/Cparser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeChecker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="38" selection-start="4213" selection-end="4213" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="6766">
+        <state line="82" column="0" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="6341">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/example.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="18" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+        <state line="23" column="5" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interpreter.py">
+    <entry file="file://$PROJECT_DIR$/AST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="25" selection-start="5142" selection-end="5142" vertical-scroll-proportion="0.7540107" vertical-offset="2608" max-vertical-offset="6647">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4148">
+          <folding />
         </state>
       </provider>
     </entry>

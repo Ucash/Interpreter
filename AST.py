@@ -1,6 +1,4 @@
 class Node(object):
-    #def __str__(self):
-    #    return self.printTree()
     def accept(self, visitor):
         return getattr(visitor, 'visit_' + self.__class__.__name__)(self)
 
